@@ -1,0 +1,10 @@
+source-images/
+original-images/
+*.psd
+*.heic
+*.HEIC
+*.tmp
+20260913_*.jpg
+20260913_*.png
+.DS_Store
+Thumbs.db

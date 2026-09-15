@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Raise the Age | Missouri Emerging Adults</title>
+    <meta
+      name="description"
+      content="Raise the Age shares the stories of Missourians sentenced as emerging adults and supports meaningful review for people serving life without parole."
+    >
+    <link rel="stylesheet" href="css/styles.css?v=20260914-4">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Raise the Age home">
+        <span class="brand-mark">21</span>
+        <span>
+          <strong>Raise the Age</strong>
+          <small>Missouri</small>
+        </span>
+      </a>
+      <nav class="header-nav" aria-label="Main navigation">
+        <a href="#numbers">Numbers</a>
+        <a href="#stories">Stories</a>
+        <a href="#partners">Connect</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="age-lockup" aria-label="Raise the age from 18 to 21">
+            <span>18</span>
+            <b>to</b>
+            <span>21</span>
+          </div>
+          <h1>Emerging adults in Missouri: the numbers tell a story.</h1>
+          <p class="lede">
+            Raise the Age supports meaningful sentence review for people who were
+            sentenced as emerging adults. Real people, stronger families, safer
+            communities, and a brighter Missouri are possible.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#stories">Browse stories</a>
+            <a class="button secondary" href="#contact">Support the campaign</a>
+          </div>
+        </div>
+        <div class="hero-impact" aria-label="Campaign impact map">
+          <div class="map-card">
+            <div class="map-heading">
+              <span>Small number of counties</span>
+              <strong>Big impact</strong>
+            </div>
+            <div class="missouri-map" aria-hidden="true">
+              <img src="assets/images/site/missouri-counties-highlighted.svg?v=20260914-2" alt="">
+            </div>
+            <dl class="map-legend">
+              <div><dt>96</dt><dd>St. Louis City</dd></div>
+              <div><dt>35</dt><dd>St. Louis County</dd></div>
+              <div><dt>25</dt><dd>Jackson County / Kansas City</dd></div>
+            </dl>
+            <p class="map-credit">
+              Map: Wikimedia Commons county map by Thomascampbell123/Awmcphee/Elli using U.S. Census TIGER/Line data.
+            </p>
+          </div>
+          <div class="impact-note">
+            <strong>They were young. Let them grow. Bring them home.</strong>
+            <span>Raise the Age: a stronger, safer Missouri is possible.</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="numbers" class="section stats-section" aria-labelledby="numbers-title">
+        <div class="section-heading">
+          <p class="eyebrow">The numbers tell a story</p>
+          <h2 id="numbers-title">A statewide issue with concentrated impact</h2>
+        </div>
+        <div class="stats-grid">
+          <article class="stat">
+            <strong>220</strong>
+            <span>approximately emerging adults</span>
+          </article>
+          <article class="stat">
+            <strong>23</strong>
+            <span>Missouri jurisdictions represented</span>
+          </article>
+          <article class="stat">
+            <strong>156</strong>
+            <span>from St. Louis City, St. Louis County, and Jackson County</span>
+          </article>
+          <article class="stat">
+            <strong>71%</strong>
+            <span>from three major areas</span>
+          </article>
+        </div>
+        <div class="city-band" aria-label="Geographic concentration">
+          <article class="city-card stl-city">
+            <img src="assets/images/site/st-louis-arch-card.jpg?v=20260914-2" alt="Gateway Arch and St. Louis skyline at night">
+            <div class="city-card-meta">
+              <strong>96</strong>
+              <span>St. Louis City</span>
+            </div>
+          </article>
+          <article class="city-card stl-county">
+            <img src="assets/images/site/clayton-skyline.jpg?v=20260914-2" alt="Clayton skyline in St. Louis County">
+            <div class="city-card-meta">
+              <strong>35</strong>
+              <span>St. Louis County</span>
+            </div>
+          </article>
+          <article class="city-card jackson">
+            <img src="assets/images/site/kansas-city-skyline.jpg?v=20260914-2" alt="Kansas City skyline">
+            <div class="city-card-meta">
+              <strong>25</strong>
+              <span>Jackson County and Kansas City</span>
+            </div>
+          </article>
+        </div>
+        <p class="section-credit">
+          Skyline imagery from Wikimedia Commons. Credits: Gateway Arch skyline from the National Archives; Clayton skyline by Paul Sableman; Kansas City skyline by Charvex.
+        </p>
+      </section>
+
+      <section id="stories" class="section stories-section" aria-labelledby="stories-title">
+        <div class="section-heading stories-heading">
+          <div>
+            <p class="eyebrow">People. Potential. Second chances.</p>
+            <h2 id="stories-title">Browse the stories</h2>
+          </div>
+          <p id="result-count" class="result-count" aria-live="polite"></p>
+        </div>
+
+        <form class="search-panel" role="search">
+          <label for="search-input">Search by name, county, accomplishment, or keyword</label>
+          <div class="search-row">
+            <input id="search-input" type="search" autocomplete="off" placeholder="Search stories">
+            <button class="button secondary" type="button" id="clear-search">Clear</button>
+          </div>
+        </form>
+
+        <div id="people-grid" class="people-grid" aria-live="polite"></div>
+        <p id="empty-state" class="empty-state" hidden>
+          Stories will appear here as they are added to the campaign archive.
+        </p>
+      </section>
+
+      <section id="partners" class="section partners-section" aria-labelledby="partners-title">
+        <div class="section-heading">
+          <p class="eyebrow">Campaign partners</p>
+          <h2 id="partners-title">Connect with the organizations behind the work</h2>
+        </div>
+        <div class="partners-grid">
+          <article class="partner-card">
+            <h3>Justice For All</h3>
+            <p>
+              Social advocacy organization supporting people and families harmed
+              by the criminal justice system.
+            </p>
+            <div class="partner-links">
+              <a href="https://justiceforallmissouri.org/" target="_blank" rel="noopener noreferrer">Visit the organization</a>
+            </div>
+          </article>
+          <article class="partner-card">
+            <h3>MoJustice</h3>
+            <p>
+              Missouri prison advocacy movement centering impacted people,
+              dignity, accountability, and reform.
+            </p>
+            <div class="partner-links">
+              <a href="https://mojustice.org/" target="_blank" rel="noopener noreferrer">Visit the organization</a>
+            </div>
+          </article>
+          <article class="partner-card">
+            <h3>Missouri Justice Coalition</h3>
+            <p>
+              A 501(c)(3) charitable nonprofit working through advocacy,
+              education, and direct action.
+            </p>
+            <div class="partner-links">
+              <a href="https://mojustice.org/" target="_blank" rel="noopener noreferrer">Visit the organization</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section why-section" aria-labelledby="why-title">
+        <div class="why-copy">
+          <div class="section-heading">
+            <p class="eyebrow">Racial equity matters</p>
+            <h2 id="why-title">A stronger, safer Missouri is possible</h2>
+          </div>
+          <p>
+            The campaign centers people who were sentenced when they were still
+            growing into adulthood, and asks Missouri to make room for review,
+            accountability, and demonstrated change.
+          </p>
+          <p>
+            Families across Missouri are affected, with the greatest impact
+            concentrated in a small number of communities. Second chances can
+            strengthen families, reduce recidivism, and build safer communities.
+          </p>
+          <p>
+            Missouri already recognizes that young people need protection while
+            they grow. We set age limits before teenagers can drive alone, vote,
+            enlist without adult consent, buy tobacco or alcohol, and gamble.
+            In nearly every part of civic life, the law understands that youth,
+            judgment, and pressure are connected. Raise the Age asks Missouri to
+            bring that same common sense to sentencing review for people who
+            were still emerging into adulthood.
+          </p>
+        </div>
+        <aside class="cost-panel" aria-label="Public cost of incarceration">
+          <span class="cost-label">Public cost</span>
+          <strong>$34k+</strong>
+          <span>estimated per person, per year</span>
+          <p>
+            Based on FY2025 Missouri budget figures for adult institutions,
+            prison human services, and offender rehabilitative services, divided
+            by the June 30, 2024 institutional population. Sentence review can
+            ask whether continued incarceration remains the best use of public
+            resources after decades of growth, accountability, and service.
+          </p>
+          <a href="https://budplan.oa.mo.gov/fy-2025-governors-recommended-budget-department-corrections" target="_blank" rel="noopener noreferrer">Budget source</a>
+          <a href="https://doc.mo.gov/sites/doc/files/media/pdf/2025/03/offender-profile-fy24.pdf" target="_blank" rel="noopener noreferrer">Population source</a>
+        </aside>
+      </section>
+
+      <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Take action</p>
+          <h2 id="contact-title">Support Raise the Age: 18 to 21</h2>
+          <p>
+            Petition and campaign contact links will be added here as the
+            campaign leader confirms the preferred destinations.
+          </p>
+        </div>
+        <span class="button primary pending-action">Petition link coming soon</span>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Raise the Age: young adults, stronger families, safer communities, a brighter Missouri.</p>
+      <p class="company-credit">
+        Copyright 2026 <a href="https://all9ssolutions.com/" target="_blank" rel="noopener noreferrer">all9s Solutions LLC</a>
+      </p>
+    </footer>
+
+    <script src="js/main.js?v=20260914-4"></script>
+  </body>
+</html>
