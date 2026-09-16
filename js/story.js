@@ -1,7 +1,7 @@
 const root = document.querySelector("#story-root");
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
-const assetVersion = "20260914-4";
+const assetVersion = "20260915-6";
 
 function text(value) {
   return value == null || value === "" ? "Not listed" : String(value);
@@ -76,7 +76,7 @@ function linksList(links) {
 
 function paragraphs(items, fallback) {
   const values = Array.isArray(items) && items.length ? items : [fallback];
-  return values.map((item) => `<p>${escapeHtml(text(item))}</p>`).join("");
+  return `<div class="story-prose">${values.map((item) => `<p>${escapeHtml(text(item))}</p>`).join("")}</div>`;
 }
 
 function renderStory(person) {
@@ -85,12 +85,15 @@ function renderStory(person) {
   const tags = person.tags || [];
   const hasBefore = Boolean(person.beforeImage);
 
+  const photosMarkup = `
+    ${photo(person.beforeImage, `${person.name} before incarceration`, "Before incarceration")}
+    ${photo(person.currentImage, `${person.name} today`, "Today")}
+  `;
+
   root.innerHTML = `
     <article class="story-shell">
-      <div class="story-photos${hasBefore ? "" : " single-photo"}">
-        ${photo(person.beforeImage, `${person.name} before incarceration`, "Before incarceration")}
-        ${photo(person.currentImage, `${person.name} today`, "Today")}
-        ${photo(person.posterImage, `${person.name} campaign story flyer`, "Campaign flyer")}
+      <div class="story-photos desktop-story-photos${hasBefore ? "" : " single-photo"}">
+        ${photosMarkup}
       </div>
       <div class="story-content">
         <div class="story-title">
@@ -102,21 +105,12 @@ function renderStory(person) {
         <dl class="detail-list">
           ${detail("Age", person.age || person.ageAtSentence)}
           ${detail("Years served", person.yearsServed)}
-          ${detail("County", person.county)}
-          ${detail("Facility", person.facility)}
           ${detail("Sentence", person.sentence)}
         </dl>
 
-        ${
-          person.quote
-            ? `<blockquote class="story-quote">${escapeHtml(text(person.quote))}</blockquote>`
-            : ""
-        }
-
-        <section class="story-section">
-          <h2>Summary</h2>
-          <p>${escapeHtml(text(person.summary || "This story is being prepared."))}</p>
-        </section>
+        <div class="story-photos mobile-story-photos${hasBefore ? "" : " single-photo"}">
+          ${photosMarkup}
+        </div>
 
         ${
           person.story
@@ -157,7 +151,7 @@ function renderStory(person) {
 if (!id) {
   root.innerHTML = '<p class="empty-state">No story was selected. Return to the story archive to choose a person.</p>';
 } else {
-  fetch("people.json?v=20260914-4")
+  fetch("people.json?v=20260915-6")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Unable to load people.json");

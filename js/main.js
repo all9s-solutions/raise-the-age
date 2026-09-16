@@ -5,7 +5,7 @@ const searchInput = document.querySelector("#search-input");
 const clearSearch = document.querySelector("#clear-search");
 
 let people = [];
-const assetVersion = "20260914-4";
+const assetVersion = "20260915-8";
 
 function text(value) {
   return value == null || value === "" ? "" : String(value);
@@ -64,7 +64,7 @@ function renderCards(items) {
         : [person.summary || "Story details are being prepared."];
 
       return `
-        <article class="person-card">
+        <article class="person-card" role="link" tabindex="0" data-href="${href}" aria-label="Read ${escapeHtml(name)} story">
           <div class="person-photos${hasBefore ? "" : " single-photo"}">
             ${
               hasBefore
@@ -122,7 +122,7 @@ function applySearch() {
   renderCards(filtered);
 }
 
-fetch("people.json?v=20260914-4")
+fetch("people.json?v=20260915-8")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Unable to load people.json");
@@ -144,4 +144,27 @@ clearSearch.addEventListener("click", () => {
   searchInput.value = "";
   applySearch();
   searchInput.focus();
+});
+
+grid.addEventListener("click", (event) => {
+  if (event.target.closest("a, button, input")) {
+    return;
+  }
+
+  const card = event.target.closest(".person-card");
+  if (card?.dataset.href) {
+    window.location.href = card.dataset.href;
+  }
+});
+
+grid.addEventListener("keydown", (event) => {
+  if (event.key !== "Enter" && event.key !== " ") {
+    return;
+  }
+
+  const card = event.target.closest(".person-card");
+  if (card?.dataset.href) {
+    event.preventDefault();
+    window.location.href = card.dataset.href;
+  }
 });

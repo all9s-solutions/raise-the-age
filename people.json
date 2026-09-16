@@ -3,9 +3,8 @@
     "id": "juane-smurf-kennell-01",
     "name": "Ju'ane \"Smurf\" Kennell",
     "slug": "juane-smurf-kennell-01",
-    "beforeImage": "",
-    "currentImage": "assets/images/people/juane-smurf-kennell-01-portrait.jpg",
-    "posterImage": "assets/images/people/juane-smurf-kennell-01-current.jpg",
+    "beforeImage": "assets/images/people/juane-smurf-kennell-01-portrait.png",
+    "currentImage": "assets/images/people/juane-smurf-kennell-01-current.jpg",
     "age": 19,
     "ageAtSentence": 19,
     "yearsServed": "20+",
@@ -19,12 +18,14 @@
       "His campaign materials emphasize continued growth, learning, and preparation for purpose beyond a life without parole sentence."
     ],
     "paragraphs": [
-      "Ju'ane Kennell entered prison at 19 and was sentenced to life without parole. His campaign materials say he maintains his innocence and continues to fight for justice.",
-      "Inside prison, his materials describe a focus on education at Lincoln University, a Bachelor of Science path in Business Administration, certification in Braille, and service as a Puppies for Parole dog handler.",
-      "His story also centers mentoring, leadership, faith, education, and the belief that people sentenced as emerging adults should have a meaningful opportunity for review."
+      "My name is Ju'ane \"Smurf\" Kennell. I entered prison at 19 years old and was sentenced to life without parole. I maintain my innocence and continue to fight for justice. More than two decades later, I refuse to let my sentence define me.",
+      "I earned my GED and continued my education at Lincoln University, pursuing a Bachelor of Science in Business Administration. I am also certified in Braille and a certified Puppies for Parole dog handler.",
+      "I have dedicated my time to education, leadership, mentorship, faith, and service, including the IPS mentoring program and Bridging the Gap.",
+      "I entered prison at 19, but I am no longer that 19-year-old young man. I have grown, learned, served, mentored, and prepared for purpose.",
+      "My story is why second chances matter."
     ],
     "story": "Ju'ane Kennell entered prison at 19 and has spent more than two decades building a record of education, leadership, mentorship, faith, and service.",
-    "quote": "My story is why second chances matter.",
+    "quote": "",
     "accomplishments": [
       "Earned a GED and continued education through Lincoln University",
       "Pursuing a Bachelor of Science in Business Administration",
@@ -51,9 +52,8 @@
     "id": "john-lee-frost-3rd-01",
     "name": "John Lee Frost 3rd",
     "slug": "john-lee-frost-3rd-01",
-    "beforeImage": "",
-    "currentImage": "assets/images/people/john-lee-frost-3rd-01-portrait.jpg",
-    "posterImage": "assets/images/people/john-lee-frost-3rd-01-current.jpg",
+    "beforeImage": "assets/images/people/john-lee-frost-3rd-01-portrait.png",
+    "currentImage": "assets/images/people/john-lee-frost-3rd-01-current.png",
     "age": 18,
     "ageAtSentence": 18,
     "yearsServed": 26,
@@ -67,12 +67,14 @@
       "His story focuses on education, mentoring, leadership, personal growth, and hope for a better future."
     ],
     "paragraphs": [
-      "John Lee Frost 3rd's campaign poster says he was sentenced to life without parole at 18 and has now been incarcerated for 26 years.",
-      "His materials describe earning a GED, completing college courses, and using education to build confidence, discipline, and a stronger sense of purpose.",
-      "He has also mentored and supported others through GLA, focusing on growth, encouragement, and the belief that people can continue to change."
+      "I was just 18 years old when I was wrongfully convicted and sentenced to life without the possibility of parole. I have now been incarcerated for 26 years.",
+      "Since that day, I have grown, matured, and transformed my life. I've taken full responsibility for my past, used my time wisely, and committed myself to becoming a better man - not just for myself, but for my family, my community, and others.",
+      "I earned my GED and have completed college courses, expanding my knowledge and opening my mind to new possibilities. Education has given me confidence, discipline, and a greater sense of purpose.",
+      "I am also proud to have been an active member of GLA (Growing Leadership and Advantage), where I mentored, encouraged, and supported others on their journey of personal growth. Giving back and uplifting others keeps me focused and motivated.",
+      "Through all the challenges, I have kept a positive attitude and a strong desire to continue to grow. I believe in second chances, and I remain hopeful for my future - because I know there is still more I can do, more I can become, and more lives I can touch."
     ],
     "story": "John Lee Frost 3rd was sentenced to life without parole at 18 and has spent 26 years focusing on education, mentoring, leadership, and personal growth.",
-    "quote": "Despite everything, I choose hope. I choose growth. I choose to keep showing up for a better future.",
+    "quote": "",
     "accomplishments": [
       "Earned a GED",
       "Completed college courses",
@@ -93,12 +95,11 @@
     "id": "kenneth-gilbert-01",
     "name": "Kenneth Gilbert",
     "slug": "kenneth-gilbert-01",
-    "beforeImage": "",
-    "currentImage": "assets/images/people/kenneth-gilbert-01-portrait.jpg",
-    "posterImage": "assets/images/people/kenneth-gilbert-01-current.jpg",
+    "beforeImage": "assets/images/people/kenneth-gilbert-01-portrait.jpg",
+    "currentImage": "assets/images/people/kenneth-gilbert-01-current.png",
     "age": 18,
     "ageAtSentence": 18,
-    "yearsServed": "",
+    "yearsServed": "30+",
     "county": "",
     "facility": "",
     "sentence": "Life without parole",
@@ -109,12 +110,15 @@
       "His story focuses on recovery, sobriety, education, accountability, service, and helping others make better choices."
     ],
     "paragraphs": [
-      "Kenneth Gilbert describes being an honors student from the suburbs before a year-long tailspin that led to prison at 18.",
-      "Four years into his life without parole sentence, he volunteered for ITC and began what he describes as a lifelong journey of recovery, sobriety, education, and service.",
-      "His materials describe teaching classes, working with crime victims, sharing his story, and participating in leadership programs as part of a commitment to accountability and change."
+      "I'm Kenneth Gilbert.",
+      "When I was eighteen, I committed a crime. Prior to the year-long tailspin that left me inside prison, I was an honors student from the suburbs. I had no idea how to navigate life behind bars.",
+      "Four years into my LWOP sentence, I volunteered for ITC and began a life-long journey of recovery, sobriety, education, and service. I dug deeply into the issues that led to my substance abuse and crime. I dealt with guilt, shame, and childhood trauma, and I learned the importance of being accountable for my actions.",
+      "I've taught classes, worked with crime victims, and shared my story many times in an effort to help others make better choices.",
+      "Today, I participate in leadership programs and strive to embody the philosophy I keep written on the door of my cell:",
+      "\"Make it better wherever you are.\""
     ],
     "story": "Kenneth Gilbert was 18 when he committed a crime. His story focuses on recovery, sobriety, education, accountability, service, and helping others make better choices.",
-    "quote": "Make it better wherever you are.",
+    "quote": "",
     "accomplishments": [
       "Recovery and sobriety work",
       "Education and self-study",
@@ -138,8 +142,7 @@
     "name": "Kenneth Bell",
     "slug": "kenneth-bell-01",
     "beforeImage": "",
-    "currentImage": "assets/images/people/kenneth-bell-01-portrait.jpg",
-    "posterImage": "assets/images/people/kenneth-bell-01-current.jpg",
+    "currentImage": "assets/images/people/kenneth-bell-01-current.png",
     "age": 19,
     "ageAtSentence": 19,
     "yearsServed": "30+",
@@ -153,9 +156,13 @@
       "His campaign materials describe decades of education, leadership, writing, advocacy, and service inside prison."
     ],
     "paragraphs": [
-      "Kenneth Bell's story poster says he was sentenced to life without parole in 1990 at the age of 19.",
-      "His materials list high school completion at Potosi Correctional Center, leadership as NAACP president at three prison branches, and admission to St. Louis University under a sentence of LWOP.",
-      "The poster also describes published writing, unpublished books, and artwork displayed at the St. Louis University Art Museum."
+      "My name is Kenneth Bell and I am a first officer.",
+      "I was sentenced to LWOP in 1990 at the age of nineteen for a crime that was described by then Lieutenant Steve Jacobsmeyer of the St. Louis City Police Department as unintentional.",
+      "I finished high school in 1991 at the Potosi Correctional Center.",
+      "I served as NAACP president at three different prison branches, and my branch in Charleston, Missouri, won the award for largest branch in the state in 2008-2009.",
+      "After being the first admission to St. Louis University under a sentence of LWOP in 2022, I graduated Summa Cum Laude from SLU in 2026.",
+      "I have written 5 unpublished books under the series title The Missouri Legal File, and one published book titled A Time To Speak.",
+      "I've been published in the St. Louis University Online Law Journal, and several pieces of my art were recently on display at the St. Louis University Art Museum."
     ],
     "story": "Kenneth Bell was sentenced to life without parole at 19 and has built a record of education, leadership, writing, advocacy, and service while incarcerated.",
     "quote": "",
@@ -181,9 +188,8 @@
     "id": "james-jd-dunn-01",
     "name": "James \"JD\" Dunn",
     "slug": "james-jd-dunn-01",
-    "beforeImage": "",
-    "currentImage": "assets/images/people/james-jd-dunn-01-portrait.jpg",
-    "posterImage": "assets/images/people/james-jd-dunn-01-current.jpg",
+    "beforeImage": "assets/images/people/james-jd-dunn-01-portrait.png",
+    "currentImage": "assets/images/people/james-jd-dunn-01-current.png",
     "age": "",
     "ageAtSentence": "",
     "yearsServed": "30+",
@@ -197,9 +203,9 @@
       "His materials describe program completion, ministry leadership, mentoring through GLA, and work in the institutional parole office."
     ],
     "paragraphs": [
-      "James \"JD\" Dunn's story poster says he has been incarcerated for more than 30 years and has tried to spend that time as peacefully as possible.",
-      "His materials describe completing virtually every program offered at Jefferson City Correctional Center.",
-      "The poster also lists service on the Willow Creek Community Church leadership team, service with Rise Up Prison Ministry, original membership and coordination work with the Growth and Leadership Academy, employment in the institutional parole office, and GLA mentoring."
+      "My name is James \"JD\" Dunn 529499, I've been in for over 30 years.",
+      "During my incarceration I've spent my time as peacefully as possible. I've completed virtually every program offered here at JCCC.",
+      "Currently I'm on the Willow Creek Community Church leadership team, the Rise Up Prison Ministry leadership team, original member and coordinator of the Growth and Leadership Academy (GLA) at JCCC, as well as being employed in the institutional parole office. I'm also a GLA mentor."
     ],
     "story": "James \"JD\" Dunn has been incarcerated for more than 30 years and describes spending his time peacefully while completing programs, serving in ministry leadership, mentoring through GLA, and working in the institutional parole office.",
     "quote": "",

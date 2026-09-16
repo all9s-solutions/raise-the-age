@@ -563,19 +563,25 @@ h3 {
   border: 3px solid var(--ink);
   background: var(--panel);
   box-shadow: 8px 8px 0 rgba(21, 22, 25, 0.1);
+  cursor: pointer;
+}
+
+.person-card:focus-visible {
+  outline: 4px solid var(--gold);
+  outline-offset: 4px;
 }
 
 .person-photos {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 8 / 5;
   border-bottom: 3px solid var(--ink);
   background: #ddd5c9;
 }
 
 .person-photos.single-photo {
   grid-template-columns: 1fr;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 8 / 5;
   background: #1d1e22;
 }
 
@@ -590,7 +596,14 @@ h3 {
   object-fit: cover;
 }
 
+.person-photo + .person-photo {
+  border-left: 3px solid var(--ink);
+}
+
 .person-photos.single-photo .person-photo img {
+  width: auto;
+  max-width: 50%;
+  margin: 0 auto;
   object-fit: cover;
 }
 
@@ -656,12 +669,12 @@ h3 {
 }
 
 .tag {
-  padding: 4px 8px;
-  border: 1px solid var(--line);
-  background: #fbfaf7;
-  color: var(--muted);
+  padding: 5px 9px;
+  border: 2px solid var(--ink);
+  background: var(--green);
+  color: #fff;
   font-size: 0.78rem;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .person-card .button {
@@ -865,6 +878,10 @@ h3 {
   gap: 12px;
 }
 
+.mobile-story-photos {
+  display: none;
+}
+
 .story-photos.single-photo {
   align-self: start;
 }
@@ -953,6 +970,31 @@ h3 {
   font-size: 1.08rem;
 }
 
+.story-prose {
+  border-top: 4px solid #c86624;
+  border-bottom: 4px solid #c86624;
+  background:
+    linear-gradient(90deg, rgba(200, 102, 36, 0.13), transparent 34%),
+    rgba(255, 255, 255, 0.68);
+}
+
+.story-prose p {
+  position: relative;
+  padding: 18px clamp(14px, 2.4vw, 24px);
+}
+
+.story-prose p + p {
+  border-top: 2px solid rgba(200, 102, 36, 0.38);
+}
+
+.story-prose p:first-child {
+  padding-top: 20px;
+}
+
+.story-prose p:last-child {
+  padding-bottom: 20px;
+}
+
 .story-quote {
   margin: 22px 0 0;
   padding: 18px 20px;
@@ -1015,6 +1057,15 @@ h3 {
   .city-card.stl-city {
     grid-column: 1 / -1;
   }
+
+  .desktop-story-photos {
+    display: none;
+  }
+
+  .mobile-story-photos {
+    display: grid;
+    margin: 24px 0 4px;
+  }
 }
 
 @media (max-width: 680px) {
@@ -1047,11 +1098,11 @@ h3 {
   }
 
   .person-photos {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 8 / 5;
   }
 
   .person-photos.single-photo {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 8 / 5;
   }
 
   .map-legend {
