@@ -1,7 +1,7 @@
 const root = document.querySelector("#story-root");
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
-const assetVersion = "20260915-6";
+const assetVersion = "20260917-1";
 
 function text(value) {
   return value == null || value === "" ? "Not listed" : String(value);
@@ -151,7 +151,7 @@ function renderStory(person) {
 if (!id) {
   root.innerHTML = '<p class="empty-state">No story was selected. Return to the story archive to choose a person.</p>';
 } else {
-  fetch("people.json?v=20260915-6")
+  fetch("people.json?v=20260917-1")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Unable to load people.json");

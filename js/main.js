@@ -5,7 +5,7 @@ const searchInput = document.querySelector("#search-input");
 const clearSearch = document.querySelector("#clear-search");
 
 let people = [];
-const assetVersion = "20260915-8";
+const assetVersion = "20260917-1";
 
 function text(value) {
   return value == null || value === "" ? "" : String(value);
@@ -122,7 +122,7 @@ function applySearch() {
   renderCards(filtered);
 }
 
-fetch("people.json?v=20260915-8")
+fetch("people.json?v=20260917-1")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Unable to load people.json");
