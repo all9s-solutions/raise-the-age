@@ -702,12 +702,14 @@ h3 {
 
 .partners-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: 16px;
+  justify-items: end;
 }
 
 .partner-card {
   display: flex;
+  width: min(100%, 50%);
   min-height: 225px;
   flex-direction: column;
   padding: 22px;
@@ -1052,6 +1054,14 @@ h3 {
   .city-band,
   .partners-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .partner-card {
+    width: 100%;
   }
 
   .city-card.stl-city {
