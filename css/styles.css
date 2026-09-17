@@ -51,7 +51,7 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 14px clamp(18px, 4vw, 54px);
+  padding: 16px clamp(18px, 4vw, 54px);
   border-bottom: 3px solid var(--ink);
   background: rgba(251, 250, 247, 0.96);
   backdrop-filter: blur(12px);
@@ -65,14 +65,10 @@ a {
 }
 
 .brand-mark {
-  display: grid;
-  width: 44px;
-  height: 44px;
-  place-items: center;
-  border: 3px solid var(--ink);
-  background:
-    linear-gradient(135deg, var(--gold) 0 52%, var(--rust) 52% 100%);
-  font-weight: 900;
+  display: block;
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
 }
 
 .brand strong,
@@ -349,7 +345,7 @@ h3 {
 }
 
 .section {
-  padding: clamp(48px, 7vw, 86px) clamp(18px, 4vw, 54px);
+  padding: clamp(88px, 7vw, 104px) clamp(18px, 4vw, 54px) clamp(48px, 7vw, 86px);
 }
 
 .section-heading {
@@ -836,6 +832,30 @@ h3 {
   border-color: #fff;
   background: #fff;
   color: var(--blue);
+}
+
+.action-copy {
+  display: grid;
+  max-width: 640px;
+  gap: 14px;
+}
+
+.action-copy .button {
+  width: 100%;
+  justify-content: center;
+}
+
+.petition-preview {
+  display: grid;
+  width: min(100%, 620px);
+  justify-items: start;
+}
+
+.petition-preview img {
+  width: 100%;
+  border: 3px solid #fff;
+  background: #fff;
+  box-shadow: 8px 8px 0 rgba(21, 22, 25, 0.22);
 }
 
 .site-footer {
